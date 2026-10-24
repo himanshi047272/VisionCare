@@ -125,6 +125,13 @@ python -m pip install --extra-index-url https://download.pytorch.org/whl/cpu -r 
 
 Download a properly licensed dataset and extract it locally. The source directory should contain `train`, `val`, and `test` folders, each containing one subfolder per class.
 
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("omkarmanohardalvi/lungs-disease-dataset-4-types")
+
+print("Path to dataset files:", path)
+
 Example:
 
 ```text
